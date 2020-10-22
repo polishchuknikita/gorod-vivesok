@@ -1,0 +1,653 @@
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+
+	/**** Header ****/
+
+	h1 {
+		font-size: 39px;
+	}
+
+	.header-communication .address {
+		padding-left: 35px;
+	}
+
+	.header-communication .email {
+		padding-left: 45px;
+	}
+
+	.header-communication .phone img, .header-communication .address img, .header-communication .email img {
+		max-width: 30px;
+	}
+
+	.header-communication .address, .header-communication .email, .header-communication .phone__number {
+		font-size: 14px;
+	}
+
+	.header-communication .phone {
+		margin-top: 0;
+	}
+
+	.header-communication .btn_payment {
+		max-width: 180px;
+		font-size: 11px;
+	}
+
+	.header-offer .offer {
+		flex-basis: 460px;
+		margin: 0 25px 0 auto;
+	}
+
+	.header-offer .offer:before	{
+		left: -22px;
+	}
+
+	#home .offer:after {
+		width: 100px;
+		height: 100px;
+		left: -10%;
+	}
+	/**** #vacancy Header ****/
+
+	#vacancy .header-offer .offer:before {
+		top: 28px;
+		left: -22px;
+	}
+
+	#vacancy .offer {
+		flex-basis: 500px;
+		margin-right: 0;
+	}
+
+	#vacancy .offer__title:after {
+		left: 136px;
+	}
+
+	#vacancy .offer__title:before {
+		left: 26px;
+	}
+
+	#vacancy .rhombus-green {
+		right: 100px;
+	}
+
+	#vacancy .rhombus-purple {
+		right: -45px;
+	}
+
+	#vacancy .triangle-pink {
+		margin-left: 0;
+	}
+
+	/**** #vacancy Job ****/
+
+	#vacancy .job-desc {
+		max-width: 760px;
+	}
+
+	#vacancy .post__text, #vacancy .salary__text, #vacancy .pay__text {
+		font-size: 22px;
+	}
+
+	/**** #vacancy Privilege ****/
+
+	#vacancy .convenience {
+		width: 48%;
+	}
+
+	#vacancy .convenience:nth-child(2n+1) {
+		margin-right: 30px;
+	}
+
+	#vacancy .convience__desc {
+		margin-left: 15px;
+		width: -webkit-fill-available;
+	}
+
+	/**** #vacancy Desc ****/
+
+	#vacancy .intro {
+		max-width: 410px;
+	}
+
+	#vacancy .desc img {
+		max-width: 490px;
+	}
+
+	/**** #vacancy Brands ****/
+
+	#vacancy .slick-dots {
+		bottom: -37px;
+	}
+
+	#vacancy .slick-dots li {
+        width: 14px;
+	    height: 14px;
+	    border-radius: 50%;
+    	margin: 0 10px;
+    	background-color: rgb(0, 135, 209, 0.35);
+	}
+
+	#vacancy .slick-dots li button {
+	    width: 14px;
+	    height: 14px;
+	    border-radius: 50%;
+		padding: 0;
+	}
+
+	#vacancy .slick-dots li.slick-active {
+		background-color: #2269f1;
+	}
+
+	/**** #vacancy Footer ****/
+
+	#vacancy .footer-info {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+
+	/**** Header ****/
+
+	.c-hamburger {
+		display: block;
+	}
+
+	.header-communication .address, .header-communication .email, .header-communication .phone {
+		display: none;
+	}
+	.header-offer .container-fluid {
+		flex-direction: column;
+	}
+
+	.header-offer .offer {
+		max-width: 720px;
+		flex-basis: auto;
+		padding-top: 78px;
+		margin: 0 auto 30px auto;
+	}
+
+	.slider-offer {
+		max-width: none;
+		flex-basis: auto;
+	}
+
+	.menu {
+		display: block;
+		max-width: 60%;
+		max-height: 500px;
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		z-index: 999;
+		background-color: #2269f1;
+		transition: all .7s ease;
+		padding: 30px 20px;
+		font-size: 18px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.menu.visible-menu {
+		left: 0;
+	}
+
+	.menu .logo {
+		display: flex;
+		color: #fff;
+	}
+
+	.menu__list {
+		display: block;
+		margin-top: 25px;
+	}
+
+	.menu__list a {
+		padding-bottom: 20px;
+	}
+
+	.menu__list > li > a {
+		color: #fff;
+	}
+
+	.dropdown-menu {
+		display: none;
+		position: static;
+		top: auto;
+		left: auto;
+		pointer-events: auto;
+		opacity: 1;
+		padding: 0;
+	}
+
+	.dropdown-menu li {
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.menu__list > li:hover .dropdown-menu {
+		top: auto;
+	}
+
+	.menu .phone {
+		color: #fff;
+	}
+
+	.menu .phone__number {
+		font-size: 17px;
+	}
+
+	#home .offer:after {
+		top: -50px;
+		bottom: auto;
+		left: 25%;
+	}
+
+	/**** #vacancy Header ****/
+
+	#vacancy .header {
+		padding-bottom: 40px;
+	}
+
+	#vacancy .header-offer {
+		flex-direction: column;
+	    margin-bottom: 0;
+	}
+
+	#vacancy .offer {
+	    max-width: 720px;
+	    flex-basis: auto;
+	    padding-top: 23px;
+	    margin: 0 auto;
+	}
+
+	#vacancy .offer__title:before {
+		top: 5px;
+	}
+
+	#vacancy .offer__title:after {
+		top: 60px;
+	}
+
+	#vacancy .triangle-pink {
+	    margin: 0 auto;
+	}
+
+	#vacancy .triangle-pink, #vacancy .triangle-pink:before {
+		height: 205px;
+		width: 205px;
+	}
+
+	#vacancy .rhombus-green {
+		display: none;
+	}
+
+	#vacancy .rhombus-purple {
+		right: -213px;
+	    bottom: 115px;
+	    width: 120px;
+	    height: 120px;
+	}
+
+	#vacancy .rhombus-orange {
+		bottom: 13px;
+    	left: -153px;
+	}
+
+	/**** #vacancy Job ****/
+
+	#vacancy .job {
+		padding: 26px 0;
+	}
+
+	#vacancy .job-desc-wrapper {
+		flex-direction: column;
+	}
+
+	#vacancy .post__title, #vacancy .salary__title, #vacancy .pay__title {
+		top: -51px;
+	}
+
+	#vacancy .job-btn {
+		margin-top: 30px;
+	}
+
+	/**** #vacancy Privilege ****/
+
+	#vacancy .convenience:nth-child(2n+1) {
+		margin-right: 25px;
+	}
+
+	/**** #vacancy Desc ****/
+
+	#vacancy .intro {
+		max-width: 285px;
+	}
+
+	#vacancy .desc img {
+		max-width: 400px;
+	}
+
+	/**** Footer ****/
+
+	#vacancy .footer {
+		padding: 60px 0;
+	}
+
+	#vacancy .footer-navigation .logo img {
+		width: 35%;
+	}
+
+	#vacancy .footer-navigation .footer-menu__list li:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	#vacancy .footer-navigation .footer-menu__list li a {
+		font-size: 13px;
+	}
+
+	#vacancy .footer-navigation .phone__number {
+		font-size: 15px;
+	}
+
+	#vacancy .footer-navigation .phone img, #vacancy .footer-communication .address img {
+		width: 15%;
+	}
+
+	#vacancy .footer-communication .social-networks li a {
+		font-size: 25px;
+	}
+	#vacancy .footer-communication .email img {
+		max-width: 20%;
+	}
+
+	#vacancy .footer-communication .address, #vacancy .footer-communication .email {
+		font-size: 14px;
+	}
+
+	#vacancy .footer-communication .email {
+		padding-left: 45px;
+	}
+
+	#vacancy .footer-communication .address {
+		padding-left: 40px;
+	}
+
+	#vacancy .footer-communication .btn_payment {
+		max-width: 160px;
+		padding: 12px 0;
+		font-size: 11px;
+	}
+
+	#vacancy .footer-info .protection {
+		width: 32%;
+	}
+
+	#vacancy .footer-info .privacy-policy {
+		width: 26%;
+	}
+}
+	
+
+@media screen and (max-width: 768px) {
+	.container, .header-offer .offer  {
+		width: 540px;
+	}
+
+	/**** #vacancy Header ****/
+	
+	#vacancy .triangle-pink, #vacancy .triangle-pink:before {
+		width: 150px;
+		height: 150px;
+	}
+
+	#vacancy .rhombus-purple {
+		right: -196px;
+	    bottom: 54px;
+	    height: 95px;
+	    width: 95px;
+	}
+
+	#vacancy .rhombus-orange {
+		bottom: 13px;
+	    left: -172px;
+	    width: 92px;
+	    height: 92px;
+	}
+
+	/**** #vacancy Job ****/
+
+	#vacancy .job-desc {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#vacancy .post, #vacancy .salary, #vacancy .pay {
+		margin-bottom: 30px;
+	}
+
+	#vacancy .post__title, #vacancy .salary__title, #vacancy .pay__title {
+		margin-bottom: 8px;
+		position: initial;
+	}
+
+	#vacancy .job-btn {
+		margin-top: 15px;
+	}
+
+	/**** #vacancy Privilege ****/
+
+	#vacancy .convenience {
+	    width: 85%;
+   		margin: 0 auto 44px;
+   		flex-direction: column;
+   		align-items: center;
+	}
+
+	#vacancy .convenience:nth-child(2n+1) {
+		margin-right: auto;
+	}
+
+	#vacancy .convenience img {
+		width: max-content;
+	}
+
+	#vacancy .convience__title {
+		text-align: center;
+	}
+
+	/**** #vacancy Desc ****/
+
+	#vacancy .triangle-orange {
+		left: 297px;
+	}
+
+	#vacancy .intro-info {
+		flex-direction: column;
+	}
+
+	#vacancy .intro {
+		max-width: none;
+		margin-bottom: 40px;
+	}
+
+	#vacancy .desc img {
+		max-width: none;
+	}
+
+	/**** Footer ****/
+
+	#vacancy .footer-navigation, #vacancy .footer-info, #vacancy .footer-communication {
+		flex-direction: column
+	}
+
+	#vacancy .footer-navigation .logo img, #vacancy .footer-navigation .phone img, #vacancy .footer-communication .address img,
+	#vacancy .footer-info .protection, #vacancy .footer-info .privacy-policy {
+		width: auto;
+	}
+
+	#vacancy .footer-menu {
+		display: none;
+	}
+
+	#vacancy .footer-navigation .phone {
+		margin-top: 25px;
+	}
+
+	#vacancy .footer-navigation .phone__number {
+		font-size: 18px;
+	}
+	
+	#vacancy .footer-communication {
+		margin-top: 20px;
+		align-items: center;
+	}
+
+	#vacancy .footer-communication .social-networks li a {
+		font-size: 29px;
+	}
+
+	#vacancy .footer-communication .email, #vacancy .footer-communication .address {
+		max-width: 208px;
+		width: auto;
+		margin-top: 20px;
+		font-size: 15px;
+	}
+
+	#vacancy .footer-communication .email {
+		padding-left: 55px;
+	}
+
+	#vacancy .footer-communication .address {
+		padding-left: 59px;
+	}
+
+	#vacancy .footer-communication .btn_payment {
+		max-width: 190px;
+		padding: 14px 0;
+		font-size: 12px;
+		margin-top: 20px;
+	}
+
+	#vacancy .footer-info {
+		text-align: center;
+	}
+
+	#vacancy .footer-info .protection,  #vacancy .footer-info .about-company, #vacancy .privacy-policy {
+		margin-bottom: 20px;
+	}
+
+	#vacancy .footer-info .about-company {
+		max-width: none;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container, .header-offer .offer {
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+
+	/**** Header ****/
+
+	#home .rhombus-green {
+		right: 0;
+	}
+	
+	/**** #vacancy Header ****/
+
+	#vacancy .rhombus-purple {
+	    right: 200px;
+    	bottom: 20px;
+	}
+
+	#vacancy .rhombus-orange {
+	    bottom: -75px;
+    	left: 149px;
+	}
+
+	/**** #vacancy Desc ****/
+
+	#vacancy .desc img {
+		max-width: 95%;
+	}
+
+	/**** #vacancy Brands ****/
+
+	#vacancy .slick-dots li:nth-child(n+5) {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.container, .header-offer .offer {
+		width: 90%;
+	}
+
+	/**** Header ****/
+
+	.header-communication .btn_payment {
+		display: none;
+	}	
+
+	/**** #vacancy Header ****/
+
+	#vacancy .offer__title {
+		line-height: 40.5px;
+	}
+
+	#vacancy .header-offer .offer:before {
+		left: -29px;
+	}
+
+	#vacancy .rhombus-orange {
+	    left: -62px;
+    	bottom: -36px;
+	}
+
+	#vacancy .rhombus-purple {
+	    display: none;
+	}
+
+	/**** #vacancy Privilege ****/
+
+	#vacancy .convenience {
+		margin-bottom: 60px;
+	}
+
+	/**** #vacancy Desc ****/
+
+	#vacancy .triangle-orange {
+		left: 150px;
+	}
+
+	#vacancy .square-green {
+		left: 50px;
+	}
+
+	#vacancy .intro__title {
+		font-size: 25px;
+	}
+	/**** Footer ****/
+
+	#vacancy .footer .triangle-orange {
+		width: 135px;
+	    height: 135px;
+	    top: 15%;
+	    left: -15%;
+	}
+}

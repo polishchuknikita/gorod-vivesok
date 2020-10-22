@@ -1,0 +1,580 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:400,700,900&display=swap&subset=cyrillic');
+
+/* Specification */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 400 16px/1.35 'Roboto', sans-serif;
+	color: #000;
+	overflow-x: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+span {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a, button, *:after, *:before {
+	transition: all .4s ease;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.j-content-between {
+	justify-content: space-between;
+}
+
+.j-content-around {
+	justify-content: space-around;
+}
+
+.j-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.align-items-start {
+	align-items: flex-start;
+}
+
+.f-wrap {
+	flex-wrap: wrap;
+}
+
+/***** Header ****/
+
+/* hamburger  */
+
+.c-hamburger {
+	display: none;
+	width: 29px;
+	height: 29px;
+	line-height: 0;
+	position: relative;
+	z-index: 1000;
+	align-self: center;
+}
+
+.c-hamburger--htx span {
+	position: relative;
+}
+
+.c-hamburger--htx span, .c-hamburger--htx span:before, .c-hamburger--htx span:after {
+	width: 100%;
+	height: 3px;
+	background-color: #ff6a29;
+}
+
+.c-hamburger--htx span:before,
+.c-hamburger--htx span:after {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.c-hamburger--htx.is-active .c-hamburger--htx span:before, .c-hamburger--htx.is-active .c-hamburger--htx span:after {
+	background-color: #fff;
+}
+
+.c-hamburger--htx span:before {
+	top: -9px;
+}
+
+.c-hamburger--htx span:after {
+	bottom: -9px;
+}
+ 
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+ 
+.c-hamburger--htx span:before,
+.c-hamburger--htx span:after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+ 
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+ 
+.c-hamburger--htx span:after {
+  transition-property: bottom, transform;
+}
+ 
+/* active humburger */
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+ 
+.c-hamburger--htx.is-active span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+ 
+.c-hamburger--htx.is-active span:after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+ 
+.c-hamburger--htx.is-active span:before,
+.c-hamburger--htx.is-active span:after {
+  transition-delay: 0s, 0.3s;
+}
+
+
+/* Header Communication */
+
+.header-communication {
+	padding: 21px 0 15px 0;
+}
+
+.header-communication a {
+	color: #000;
+}
+
+.logo {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.logo__info {
+	margin-left: 13px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.logo__info span {
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.logo__info span:before, .logo__info span:after {
+	content: '';
+	display: block;
+	background-color: #FF6A29;
+	position: absolute;
+}
+
+.logo__info span:before {
+	width: 13px;
+	height: 7px;
+	top: 3px;
+	right: 4px;
+}
+
+.logo__info span:after {
+	width: 19px;
+	height: 2px;
+	position: absolute;
+	bottom: 6px;
+	right: -15px;
+}
+
+.logo__info span, .address, .email {
+	position: relative;
+}
+
+.address {
+	padding-left: 52px;
+}
+
+.email {
+	padding-left: 69px;
+}
+
+.address img, .email img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.address__title, .email__title {
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #90B7CC;
+}
+
+.address__info {
+	max-width: 156px;
+}
+
+.header-communication .phone {
+	margin-top: 4px;
+}
+
+.phone__number {
+	margin-left: 6px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.btn {
+	font-weight: 700;
+	text-transform: uppercase;
+	border-top-left-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 4px 4px 0px 0px rgba(255,106,41,0.25);
+}
+
+.btn_payment {
+	max-width: 190px;
+	width: 100%;
+	background-color: #FF6A29;
+	padding: 16px 0;
+	color: #fff;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #FF6A29;
+	border-color: currentColor;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 10px;
+	box-shadow: none;
+}
+
+/* Header Navigation */
+
+.header-navigation {
+	padding: 15px 0 28px 0;
+}
+
+.menu .logo {
+	display: none;
+}
+
+.menu__list > li > a {
+	padding-right: 30px;
+}
+
+.menu__list > li:last-child > a {
+	padding-right: 0;
+}
+
+.menu  {
+	max-width: 628px;
+	width: 100%;
+	position: relative;
+	font-weight: 700;
+}
+
+.menu__list > li:hover .dropdown-menu {
+	opacity: 1;
+	top: 100%;
+	pointer-events: auto;
+}
+
+.menu__list a {
+	display: inline-block;
+}
+
+.menu__list > li > a {
+	color: #000;
+	position: relative;;
+	z-index: 101;
+}
+
+.menu__list > li a:hover, .menu__list > li.current-item > a, .dropdown-menu li.current-item a {
+	color: #FF6A29;
+}
+
+.menu__list > li:not(:first-child):not(:last-child) > a:after {
+	content: '\f107';
+    display: inline-block;
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    top: 0;
+    right: 14px
+}
+
+.menu__list > li:hover > a:after {
+	transform: rotate(180deg);
+	color: #FF6A29;
+}
+
+.dropdown-menu  {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: #2269F1;
+	border-radius: 5px;
+	position: absolute;
+	top: -1000%;
+	left: 0;
+	z-index: 100;
+	pointer-events: none;
+	padding: 20px;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+.dropdown-menu li {
+	width: 35%;
+	margin-bottom: 15px;
+}
+
+.dropdown-menu li > a {
+	color: #fff;
+}
+
+#home .rhombus-green {
+	width: 100px;
+	height: 100px;	
+	position: absolute;
+	top: -3px;	
+	right: -60px;
+	z-index: 50;	
+	background: url('../img/scenery/roumbe-bg-green.png') no-repeat center center / cover;
+}
+
+/* Header Offer */
+
+.offer {
+	flex-basis: 510px;
+	margin: 0px 60px 0 auto;
+	padding-top: 129px;
+	position: relative;
+}
+
+.header-offer .offer:before {
+	content: '';
+	display: block;
+	width: 338px;
+	height: 205px;
+	background: url('../img/scenery/bg-title.png') no-repeat top center;
+	position: absolute;
+	top: 0px;
+	left: -121px;
+	z-index: -1;
+}
+
+.offer__title {
+	position: relative;
+	z-index: 20;
+	letter-spacing: .02em;
+}
+
+.offer__title:before, .offer__title:after {
+	content: '';
+	display: block;
+	width: 94px;
+	height: 230px;
+	background-color: rgba(0,59,209, 0.05);
+	position: absolute;
+	z-index: 5;
+}
+
+.offer__title:before {
+	top: -95px;
+	left: -60px;
+	border-top-left-radius: 10px;
+}
+
+.offer__title:after {
+	top: -38px;
+	left: 48px;
+}
+
+.offer__title span {
+	color: #2269F1;
+}
+
+.offer__info {
+	max-width: 370px;
+}
+
+#home .offer:after {
+	content: '';
+	display: block;
+	width: 148px;
+	height: 148px;
+	background: url('../img/scenery/roumbe-bg-violet.png') no-repeat top center / cover;
+	position: absolute;
+	bottom: 0;
+	left: -25%;
+	z-index: -1;
+}
+
+.slider-offer {
+	max-width: 50%;
+	margin-bottom: 33px;
+	z-index: 30;
+}
+
+.slider-offer:before {
+
+}
+
+.slide-offer {
+	max-height: 438px;
+	border-top-left-radius: 24px;
+	box-shadow: 10px 10px 0px 0px rgba(186,215,231,0.29);
+}
+
+.slide-offer img {
+	width: 100%;
+	max-height: 438px;
+}
+
+.slick-slide {
+	outline: none;
+}
+
+.slider-offer .slide-offer-arrows {
+	width: 49px;
+	height: 65px;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 40%;
+	z-index: 50;
+	font-size: 27px;
+}
+
+.slider-offer .arrow-slide-prev {
+	left: 0;
+}
+
+.slider-offer .arrow-slide-next {
+	right: 0;
+}
+
+.slider-offer .slick-dots li button {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: rgba(0, 135, 209, 0.35);
+}
+
+.slider-offer .slick-dots {
+	bottom: -59px;
+	text-align: left;
+}
+
+.slick-dots li {
+	width: auto;
+	height: auto;
+}
+
+.slick-dots li button:before {
+	display: none;
+}
+
+.slider-offer .slick-dots li.slick-active button, .slider-offer .slick-dots li button:hover {
+	background-color: #2269F1;
+}
+
+.scroll-down {
+	font-size: 40px;
+	color: #000;
+}
+
+.portfolio-link {
+	max-width: 175px;
+	width: 100%;
+	height: 36px;
+	border: 1px solid #2269F1;
+	position: relative;
+	z-index: 40;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #2269F1;
+	text-align: center;
+	line-height: 36px;
+}
+
+.portfolio-link:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #2269F1;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+.portfolio-link:hover:after {
+	top: 0;
+	left: 0;
+	border-color: transparent;
+}
+
+/****  Preloader ****/
+
+#preloader {
+	z-index: 10000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(34,105,241);
+}
+
+#preloader img {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@import '_media.scss';
